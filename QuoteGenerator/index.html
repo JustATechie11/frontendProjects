@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire - Premium Quote Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="background-container">
+        <div class="gradient-orb gradient-orb-1"></div>
+        <div class="gradient-orb gradient-orb-2"></div>
+        <div class="gradient-orb gradient-orb-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="brand">INSPIRE</h1>
+            <p class="tagline">Daily Wisdom & Inspiration</p>
+        </header>
+
+        <!-- Quote Card -->
+        <div class="quote-wrapper">
+            <div class="quote-card">
+                <!-- Decorative Top Line -->
+                <div class="card-decoration card-decoration-top"></div>
+
+                <!-- Quote Mark Icon -->
+                <div class="quote-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50" y="70" font-size="120" font-weight="bold" text-anchor="middle" font-family="Playfair Display" fill="currentColor" opacity="0.15">"</text>
+                    </svg>
+                </div>
+
+                <!-- Quote Content -->
+                <div class="quote-content">
+                    <p id="quote" class="quote-text">The only way to do great work is to love what you do.</p>
+                    <p id="author" class="quote-author">Steve Jobs</p>
+                </div>
+
+                <!-- Decorative Bottom Line -->
+                <div class="card-decoration card-decoration-bottom"></div>
+
+                <!-- Quote Stats -->
+                <div class="quote-stats">
+                    <span class="quote-number"><span id="quoteNumber">1</span> / <span id="totalQuotes">18</span></span>
+                </div>
+            </div>
+
+            <!-- Card Shadow Layer -->
+            <div class="card-shadow"></div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button id="prevBtn" class="btn btn-icon" title="Previous Quote">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <button id="newQuoteBtn" class="btn btn-primary">
+                <span class="btn-text">New Quote</span>
+                <span class="btn-icon-inline">✨</span>
+            </button>
+
+            <button id="nextBtn" class="btn btn-icon" title="Next Quote">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Secondary Actions -->
+        <div class="secondary-actions">
+            <button id="shareBtn" class="btn-action" title="Share Quote">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx="6" cy="12" r="3"></circle>
+                    <circle cx="18" cy="19" r="3"></circle>
+                    <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                    <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+                <span>Share</span>
+            </button>
+
+            <button id="copyBtn" class="btn-action" title="Copy Quote">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                    <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                </svg>
+                <span>Copy</span>
+            </button>
+
+            <button id="favoriteBtn" class="btn-action" title="Add to Favorites">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <span>Like</span>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Every day is a chance to be inspired</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
